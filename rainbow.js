@@ -5,5 +5,6 @@
     body.style['background-color'] = 'rgb('+(i+10)+', 255, 255)'
     console.log('balls')
     i += 10
-  },1000)
-})()
+  },100)
+})
+
