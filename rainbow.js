@@ -6,4 +6,4 @@
     console.log('balls')
     i += 10
   },1000)
-})
+})()
