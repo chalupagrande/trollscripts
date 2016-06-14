@@ -30,7 +30,7 @@
   stats.appendChild(sizing)
 
   elements.forEach(function(el){
-    el.addEventListener('dblclick', function(event){
+    el.addEventListener('hover', function(event){
         event.stopPropagation()
         console.log(this)
         var box = this.getBoundingClientRect()
