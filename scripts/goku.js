@@ -33,8 +33,7 @@
 
       videoId: "4OAm2LkrrLg",
       events: {
-        'onReady': onPlayerReady,
-        'onStateChange': onPlayerStateChange
+        'onReady': onPlayerReady
       },
       playerVars: {
         controls:0,
