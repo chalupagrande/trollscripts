@@ -39,47 +39,26 @@
         controls:0,
         start: 18,
         showinfo: 0,
-        autoplay:1
+        // autoplay:1
       }
     })
   }
   window.onYouTubeIframeAPIReady = onYouTubeIframeAPIReady;
+  var gokus;
+  var index = 0
 
 
   function onPlayerReady(event){
-    console.log('ready')
-    addGokus()
-  }
-
-  var g1,g2,g3,g4,g5,g6,g7;
-  var gokus;
-
-  function addGokus(){
-    g1 = document.createElement('img')
-    g1.setAttribute('width','300')
-    g1.style.transition = 'transform 2.5s linear'
-    g2 = g1.cloneNode(false)
-    g3 = g1.cloneNode(false)
-    g4 = g1.cloneNode(false)
-    g5 = g1.cloneNode(false)
-    g6 = g1.cloneNode(false)
-
-
-    g1.setAttribute('src','https://media.giphy.com/media/raiL1MZeFhsoU/giphy.gif')
-    g2.setAttribute('src', 'https://media.giphy.com/media/1nbhuPKT92SeA/giphy.gif')
-    g3.setAttribute('src', 'http://66.media.tumblr.com/tumblr_luw3ww7smF1qeh39oo1_500.gif')
-    g4.setAttribute('src', 'http://home.insightbb.com/~pnacc/Anime%20Video%20Game%20Stuff/Animations/Dragonball%20Z/Goku%204.gif')
-
-    kids.appendChild(g1)
-    kids.appendChild(g2)
-    kids.appendChild(g3)
-    kids.appendChild(g4)
-    gokus = [g1,g2,g3,g4]
+     var sources = [
+     'https://media.giphy.com/media/raiL1MZeFhsoU/giphy.gif',
+     'https://media.giphy.com/media/1nbhuPKT92SeA/giphy.gif',
+     'http://66.media.tumblr.com/tumblr_luw3ww7smF1qeh39oo1_500.gif',
+     'http://home.insightbb.com/~pnacc/Anime%20Video%20Game%20Stuff/Animations/Dragonball%20Z/Goku%204.gif',]
+     gokus = makeGokus(sources)
 
     var animationId = requestAnimationFrame(draw)
-
   }
-  var index = 0
+
   function draw(){
     setTimeout(function(){
       if(index == gokus.length) index = 0
@@ -98,7 +77,23 @@
 
   function newPosition(){
     var x = Math.random()*w-300
-    var y = Math.random()*h-300
+    var y = Math.random()*h
     return [x,y]
+  }
+
+  function makeGokus(sources){
+    var result = []
+    for(var i = 0; i < sources.length; i++){
+      temp = document.createElement('img')
+      temp.setAttribute('width','300')
+      temp.style['position']= 'absolute'
+      temp.style['top']= -300
+      temp.style['left']= -300
+      temp.setAttribute('src', sources[i])
+      temp.style.transition = 'transform 2.5s linear'
+      kids.appendChild(temp)
+      result.push(temp)
+    }
+    return result
   }
 })()
