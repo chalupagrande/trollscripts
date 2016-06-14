@@ -39,7 +39,7 @@
         controls:0,
         start: 18,
         showinfo: 0,
-        // autoplay:1
+        autoplay:1
       }
     })
   }
