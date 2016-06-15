@@ -5,22 +5,66 @@
   <title>OVER 9000!</title>
 </head>
 <style>
+  body{
+    font-family:Helvetica;
+  }
   .content{
+    text-align: center;
     display:flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
   }
   .small{
-    font-size:9px;
+    font-size:11px;
   }
+  .button{
+    padding:15px 30px;
+    color: #ffffff;
+    background-color: #ff1502;
+    font-weight:bolder;
+    text-decoration: none;
+  }
+  #hoverGoku {
+    position:absolute;
+    top:0;
+    left:0;
+    height:100vh;
+    width:100vw;
+    z-index:-1;
+  }
+  p {
+    text-align: center;
+  }
+  #ball{
+    width:30vw;
+  }
+
 </style>
 <body>
 
 <div class="content">
-  <img src="http://ecx.images-amazon.com/images/I/51lIPqnkwXL._SY355_.jpg" alt="dragonball">
-  <a href="javascript:(function(){var a = document.createElement('script'); a.setAttribute('src','http://ninth-mind.github.io/trollscripts/scripts/goku.js'); document.body.appendChild(a)})()">Over 9000!</a>
-  <p>You can drag the link to your bookmark bar to go OVER 9000 on any webpage <span class="small">(that will let you)</span></p>
+  <a href="javascript:(function(){var a = document.createElement('script'); a.setAttribute('src','http://ninth-mind.github.io/trollscripts/scripts/goku.js'); document.body.appendChild(a)})()">
+    <img id="ball" src="dragonball.jpg" alt="dragonball">
+  </a>
+  <a class="button" href="javascript:(function(){var a = document.createElement('script'); a.setAttribute('src','http://ninth-mind.github.io/trollscripts/scripts/goku.js'); document.body.appendChild(a)})()">
+    Go Over 9000!
+  </a>
+  <p>You can drag the link to your bookmark bar to go OVER 9000 on any webpage* <br><span class="small"> *(some site block this ability.)</span></p>
 </div>
+
+<script>
+  document.querySelector('.button').addEventListener('mouseover', function(){
+    var img = document.createElement('img')
+    document.getElementById('ball').style.opacity = 0
+    img.setAttribute('src','supersaiyan.gif')
+    img.setAttribute('id','hoverGoku')
+    document.body.appendChild(img)
+  })
+  document.querySelector('.button').addEventListener('mouseleave', function(){
+    document.getElementById('ball').style.opacity = 1
+    document.getElementById('hoverGoku').remove()
+  })
+</script>
 </body>
 </html>

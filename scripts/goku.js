@@ -49,12 +49,12 @@
 
 
   function onPlayerReady(event){
-     var sources = [
-     'https://media.giphy.com/media/raiL1MZeFhsoU/giphy.gif',
-     'https://media.giphy.com/media/1nbhuPKT92SeA/giphy.gif',
-     'http://66.media.tumblr.com/tumblr_luw3ww7smF1qeh39oo1_500.gif',
-     'http://home.insightbb.com/~pnacc/Anime%20Video%20Game%20Stuff/Animations/Dragonball%20Z/Goku%204.gif',]
-     gokus = makeGokus(sources)
+    var sources = [
+      'https://media.giphy.com/media/raiL1MZeFhsoU/giphy.gif',
+      'https://media.giphy.com/media/1nbhuPKT92SeA/giphy.gif',
+      'http://66.media.tumblr.com/tumblr_luw3ww7smF1qeh39oo1_500.gif',
+      'http://home.insightbb.com/~pnacc/Anime%20Video%20Game%20Stuff/Animations/Dragonball%20Z/Goku%204.gif',]
+    gokus = makeGokus(sources)
 
     var animationId = requestAnimationFrame(draw)
   }
