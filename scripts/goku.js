@@ -4,6 +4,7 @@
   parent.style.position = 'fixed'
   parent.style.zIndex = 9001;
   parent.style.top = 0
+  parent.style.left = 0
 
   var video = document.createElement('div')
   video.setAttribute('id','player')
@@ -11,7 +12,8 @@
   var kids = document.createElement('div')
   kids.setAttribute('class','gokus')
   kids.style.position = 'absolute'
-  kids.style.top = 10
+  kids.style.top = 0
+  kids.style.left = 0
 
 
   parent.appendChild(kids)
