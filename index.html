@@ -3,36 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <title>trollscripts</title>
-<style>
-  body {
-    font-family: Helvetica;
-    font-size:16px;
-  }
-  .links {
-    display: flex;
-    flex-flow: column nowrap;
-  }
+  <style>
+    body {
+      font-family: Helvetica;
+      font-size:16px;
+    }
+    .links {
+      display: flex;
+      flex-flow: column nowrap;
+    }
 
-  a {
-    color: black;
-    margin: 1rem;
-    text-decoration: none;
+    a {
+      color: black;
+      margin: 1rem;
+      text-decoration: none;
 
-  }
-  a:hover{
-    text-decoration: underline;
-  }
-</style>
+    }
+    a:hover{
+      text-decoration: underline;
+    }
+
+    code {
+      display: block;
+      white-space: pre;
+      font-family: Courier;
+      padding: 1rem;
+      background: rgba(0,0,0,0.05);
+      overflow: auto;
+      width: 80%;
+      margin: 0 auto;
+      position: relative;
+    }
+  </style>
 </head>
 <body>
-<h1>Bookmarklets</h1>
-<p>Drag these links into your bookmarks bar. Then you can use them on any site! (That allows bookmarklets)</p>
+<div class="wrapper">
+  <h1>Bookmarklets</h1>
+  <p>Drag these links into your bookmarks bar. Then you can use them on any site! (That allows bookmarklets)</p>
+  <code>"javascript:(function(){var a = document.createElement('script'); a.setAttribute('src','http://ninth-mind.github.io/trollscripts/scripts/SCRIPTNAME.js'); document.body.appendChild(a)})()"</code>
 
-<div class="links">
-  <a href="javascript:(function(){var a = document.createElement('script'); a.setAttribute('src','http://ninth-mind.github.io/trollscripts/scripts/rainbow.js'); document.body.appendChild(a)})()">Debug Your CSS</a>
+  <div class="links">
+    <a href="#" onclick="rainbow()">Debug Your CSS</a>
 
-  <a href="javascript:(function(){var a = document.createElement('script'); a.setAttribute('src','http://ninth-mind.github.io/trollscripts/scripts/goku.js'); document.body.appendChild(a)})()" onclick="goku()">goku</a>
+    <a href="views/goku.html">goku</a>
 
+  </div>
+
+
+  <div class="stats">
+    <div class="node-name"></div>
+    <div class="sizing">
+      <div class="width"></div>
+      <div class="heihgt"></div>
+    </div>
+  </div>
 </div>
+<script src="scripts/dev.js"></script>
 </body>
 </html>

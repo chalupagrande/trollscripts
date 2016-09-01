@@ -1,5 +1,5 @@
 
-(function(){
+function rainbow(){
   var elements = Array.prototype.slice.call(document.querySelectorAll('*'))
   Array.prototype.forEach.call(elements, function(el, i){
     el.style.outline = "1px solid hsl(" + (i % 360)+", 50%, 50%)";
@@ -26,7 +26,6 @@
   var sizing = document.createElement('div')
   sizing.innerText = "size will appear here."
 
-
   stats.appendChild(node)
   stats.appendChild(sizing)
 
@@ -40,4 +39,4 @@
     })
 
   })
-})()
+}

@@ -47,7 +47,7 @@
 
 <div class="content">
   <a href="javascript:(function(){var a = document.createElement('script'); a.setAttribute('src','http://ninth-mind.github.io/trollscripts/scripts/goku.js'); document.body.appendChild(a)})()">
-    <img id="ball" src="dragonball.jpg" alt="dragonball">
+    <img id="ball" src="../resources/dragonball.jpg" alt="dragonball">
   </a>
   <a class="button" href="javascript:(function(){var a = document.createElement('script'); a.setAttribute('src','http://ninth-mind.github.io/trollscripts/scripts/goku.js'); document.body.appendChild(a)})()">
     Go Over 9000!
@@ -59,7 +59,7 @@
   document.querySelector('.button').addEventListener('mouseover', function(){
     var img = document.createElement('img')
     document.getElementById('ball').style.opacity = 0
-    img.setAttribute('src','supersaiyan.gif')
+    img.setAttribute('src','../resources/supersaiyan.gif')
     img.setAttribute('id','hoverGoku')
     document.body.appendChild(img)
   })
