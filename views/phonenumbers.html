@@ -26,6 +26,13 @@
       display: flex;
       justify-content: space-between;
     }
+    .checkbox-field {
+      display: flex;
+      flex-flow: row nowrap;
+    }
+    .checkbox-field .checkbox--number:not(last-child){
+      margin-right: 1rem;
+    }
 
   </style>
 </head>
@@ -66,6 +73,7 @@
 
   <hr>
 
+  <!-- randomize -->
   <h1>Please Submit your Phone Number</h1>
   <div class="number-input">
     <h3 class="number randomize"></h3>
@@ -75,7 +83,7 @@
   </div>
 
   <hr>
-
+  <!-- range -->
   <h1>Please Submit your Phone Number</h1>
   <h3 class="number slider"></h3>
   <input type="range" oninput="getSlider()" id="number" min="0000000000" value="10" max="9999999999" step="1">
@@ -83,6 +91,7 @@
 
   <hr>
 
+  <!-- slots -->
   <h1>Please Submit your Phone Number</h1>
   <button onclick="pull()">Pull</button>
   <div class="slots">
@@ -113,12 +122,473 @@
   </div>
   <button onclick='confirm()'>Submit</button>
 
+  <hr>
+
+    <!-- checkboxes -->
+
+  <h1>Please Submit your Phone Number</h1>
+  <p>Use the checkboxes to draw your phone number.</p>
+  <div class="checkbox-nightmare">
+    <div class="checkbox-field">
+      <div class="checkbox--number digit-0">
+        <div class="row">
+          <input type="checkbox" name="r1c1">
+          <input type="checkbox" name="r1c2">
+          <input type="checkbox" name="r1c3">
+          <input type="checkbox" name="r1c4">
+        </div>
+        <div class="row">
+          <input type="checkbox" name="r2c1">
+          <input type="checkbox" name="r2c2">
+          <input type="checkbox" name="r2c3">
+          <input type="checkbox" name="r2c4">
+        </div>
+        <div class="row">
+          <input type="checkbox" name="r3c1">
+          <input type="checkbox" name="r3c2">
+          <input type="checkbox" name="r3c3">
+          <input type="checkbox" name="r3c4">
+        </div>
+        <div class="row">
+          <input type="checkbox" name="r4c1">
+          <input type="checkbox" name="r4c2">
+          <input type="checkbox" name="r4c3">
+          <input type="checkbox" name="r4c4">
+        </div>
+        <div class="row">
+          <input type="checkbox" name="r5c1">
+          <input type="checkbox" name="r5c2">
+          <input type="checkbox" name="r5c3">
+          <input type="checkbox" name="r5c4">
+        </div>
+        <div class="row">
+          <input type="checkbox" name="r6c1">
+          <input type="checkbox" name="r6c2">
+          <input type="checkbox" name="r6c3">
+          <input type="checkbox" name="r6c4">
+        </div>
+        <div class="row">
+          <input type="checkbox" name="r7c1">
+          <input type="checkbox" name="r7c2">
+          <input type="checkbox" name="r7c3">
+          <input type="checkbox" name="r7c4">
+        </div>
+      </div>
+      <div class="checkbox--number digit-1">
+        <div class="row">
+          <input type="checkbox" name="r1c1">
+          <input type="checkbox" name="r1c2">
+          <input type="checkbox" name="r1c3">
+          <input type="checkbox" name="r1c4">
+        </div>
+        <div class="row">
+          <input type="checkbox" name="r2c1">
+          <input type="checkbox" name="r2c2">
+          <input type="checkbox" name="r2c3">
+          <input type="checkbox" name="r2c4">
+        </div>
+        <div class="row">
+          <input type="checkbox" name="r3c1">
+          <input type="checkbox" name="r3c2">
+          <input type="checkbox" name="r3c3">
+          <input type="checkbox" name="r3c4">
+        </div>
+        <div class="row">
+          <input type="checkbox" name="r4c1">
+          <input type="checkbox" name="r4c2">
+          <input type="checkbox" name="r4c3">
+          <input type="checkbox" name="r4c4">
+        </div>
+        <div class="row">
+          <input type="checkbox" name="r5c1">
+          <input type="checkbox" name="r5c2">
+          <input type="checkbox" name="r5c3">
+          <input type="checkbox" name="r5c4">
+        </div>
+        <div class="row">
+          <input type="checkbox" name="r6c1">
+          <input type="checkbox" name="r6c2">
+          <input type="checkbox" name="r6c3">
+          <input type="checkbox" name="r6c4">
+        </div>
+        <div class="row">
+          <input type="checkbox" name="r7c1">
+          <input type="checkbox" name="r7c2">
+          <input type="checkbox" name="r7c3">
+          <input type="checkbox" name="r7c4">
+        </div>
+      </div>
+      <div class="checkbox--number digit-2">
+        <div class="row">
+          <input type="checkbox" name="r1c1">
+          <input type="checkbox" name="r1c2">
+          <input type="checkbox" name="r1c3">
+          <input type="checkbox" name="r1c4">
+        </div>
+        <div class="row">
+          <input type="checkbox" name="r2c1">
+          <input type="checkbox" name="r2c2">
+          <input type="checkbox" name="r2c3">
+          <input type="checkbox" name="r2c4">
+        </div>
+        <div class="row">
+          <input type="checkbox" name="r3c1">
+          <input type="checkbox" name="r3c2">
+          <input type="checkbox" name="r3c3">
+          <input type="checkbox" name="r3c4">
+        </div>
+        <div class="row">
+          <input type="checkbox" name="r4c1">
+          <input type="checkbox" name="r4c2">
+          <input type="checkbox" name="r4c3">
+          <input type="checkbox" name="r4c4">
+        </div>
+        <div class="row">
+          <input type="checkbox" name="r5c1">
+          <input type="checkbox" name="r5c2">
+          <input type="checkbox" name="r5c3">
+          <input type="checkbox" name="r5c4">
+        </div>
+        <div class="row">
+          <input type="checkbox" name="r6c1">
+          <input type="checkbox" name="r6c2">
+          <input type="checkbox" name="r6c3">
+          <input type="checkbox" name="r6c4">
+        </div>
+        <div class="row">
+          <input type="checkbox" name="r7c1">
+          <input type="checkbox" name="r7c2">
+          <input type="checkbox" name="r7c3">
+          <input type="checkbox" name="r7c4">
+        </div>
+      </div>
+      <div class="checkbox--number digit-3">
+        <div class="row">
+          <input type="checkbox" name="r1c1">
+          <input type="checkbox" name="r1c2">
+          <input type="checkbox" name="r1c3">
+          <input type="checkbox" name="r1c4">
+        </div>
+        <div class="row">
+          <input type="checkbox" name="r2c1">
+          <input type="checkbox" name="r2c2">
+          <input type="checkbox" name="r2c3">
+          <input type="checkbox" name="r2c4">
+        </div>
+        <div class="row">
+          <input type="checkbox" name="r3c1">
+          <input type="checkbox" name="r3c2">
+          <input type="checkbox" name="r3c3">
+          <input type="checkbox" name="r3c4">
+        </div>
+        <div class="row">
+          <input type="checkbox" name="r4c1">
+          <input type="checkbox" name="r4c2">
+          <input type="checkbox" name="r4c3">
+          <input type="checkbox" name="r4c4">
+        </div>
+        <div class="row">
+          <input type="checkbox" name="r5c1">
+          <input type="checkbox" name="r5c2">
+          <input type="checkbox" name="r5c3">
+          <input type="checkbox" name="r5c4">
+        </div>
+        <div class="row">
+          <input type="checkbox" name="r6c1">
+          <input type="checkbox" name="r6c2">
+          <input type="checkbox" name="r6c3">
+          <input type="checkbox" name="r6c4">
+        </div>
+        <div class="row">
+          <input type="checkbox" name="r7c1">
+          <input type="checkbox" name="r7c2">
+          <input type="checkbox" name="r7c3">
+          <input type="checkbox" name="r7c4">
+        </div>
+      </div>
+      <div class="checkbox--number digit-4">
+        <div class="row">
+          <input type="checkbox" name="r1c1">
+          <input type="checkbox" name="r1c2">
+          <input type="checkbox" name="r1c3">
+          <input type="checkbox" name="r1c4">
+        </div>
+        <div class="row">
+          <input type="checkbox" name="r2c1">
+          <input type="checkbox" name="r2c2">
+          <input type="checkbox" name="r2c3">
+          <input type="checkbox" name="r2c4">
+        </div>
+        <div class="row">
+          <input type="checkbox" name="r3c1">
+          <input type="checkbox" name="r3c2">
+          <input type="checkbox" name="r3c3">
+          <input type="checkbox" name="r3c4">
+        </div>
+        <div class="row">
+          <input type="checkbox" name="r4c1">
+          <input type="checkbox" name="r4c2">
+          <input type="checkbox" name="r4c3">
+          <input type="checkbox" name="r4c4">
+        </div>
+        <div class="row">
+          <input type="checkbox" name="r5c1">
+          <input type="checkbox" name="r5c2">
+          <input type="checkbox" name="r5c3">
+          <input type="checkbox" name="r5c4">
+        </div>
+        <div class="row">
+          <input type="checkbox" name="r6c1">
+          <input type="checkbox" name="r6c2">
+          <input type="checkbox" name="r6c3">
+          <input type="checkbox" name="r6c4">
+        </div>
+        <div class="row">
+          <input type="checkbox" name="r7c1">
+          <input type="checkbox" name="r7c2">
+          <input type="checkbox" name="r7c3">
+          <input type="checkbox" name="r7c4">
+        </div>
+      </div>
+      <div class="checkbox--number digit-5">
+        <div class="row">
+          <input type="checkbox" name="r1c1">
+          <input type="checkbox" name="r1c2">
+          <input type="checkbox" name="r1c3">
+          <input type="checkbox" name="r1c4">
+        </div>
+        <div class="row">
+          <input type="checkbox" name="r2c1">
+          <input type="checkbox" name="r2c2">
+          <input type="checkbox" name="r2c3">
+          <input type="checkbox" name="r2c4">
+        </div>
+        <div class="row">
+          <input type="checkbox" name="r3c1">
+          <input type="checkbox" name="r3c2">
+          <input type="checkbox" name="r3c3">
+          <input type="checkbox" name="r3c4">
+        </div>
+        <div class="row">
+          <input type="checkbox" name="r4c1">
+          <input type="checkbox" name="r4c2">
+          <input type="checkbox" name="r4c3">
+          <input type="checkbox" name="r4c4">
+        </div>
+        <div class="row">
+          <input type="checkbox" name="r5c1">
+          <input type="checkbox" name="r5c2">
+          <input type="checkbox" name="r5c3">
+          <input type="checkbox" name="r5c4">
+        </div>
+        <div class="row">
+          <input type="checkbox" name="r6c1">
+          <input type="checkbox" name="r6c2">
+          <input type="checkbox" name="r6c3">
+          <input type="checkbox" name="r6c4">
+        </div>
+        <div class="row">
+          <input type="checkbox" name="r7c1">
+          <input type="checkbox" name="r7c2">
+          <input type="checkbox" name="r7c3">
+          <input type="checkbox" name="r7c4">
+        </div>
+      </div>
+      <div class="checkbox--number digit-6">
+        <div class="row">
+          <input type="checkbox" name="r1c1">
+          <input type="checkbox" name="r1c2">
+          <input type="checkbox" name="r1c3">
+          <input type="checkbox" name="r1c4">
+        </div>
+        <div class="row">
+          <input type="checkbox" name="r2c1">
+          <input type="checkbox" name="r2c2">
+          <input type="checkbox" name="r2c3">
+          <input type="checkbox" name="r2c4">
+        </div>
+        <div class="row">
+          <input type="checkbox" name="r3c1">
+          <input type="checkbox" name="r3c2">
+          <input type="checkbox" name="r3c3">
+          <input type="checkbox" name="r3c4">
+        </div>
+        <div class="row">
+          <input type="checkbox" name="r4c1">
+          <input type="checkbox" name="r4c2">
+          <input type="checkbox" name="r4c3">
+          <input type="checkbox" name="r4c4">
+        </div>
+        <div class="row">
+          <input type="checkbox" name="r5c1">
+          <input type="checkbox" name="r5c2">
+          <input type="checkbox" name="r5c3">
+          <input type="checkbox" name="r5c4">
+        </div>
+        <div class="row">
+          <input type="checkbox" name="r6c1">
+          <input type="checkbox" name="r6c2">
+          <input type="checkbox" name="r6c3">
+          <input type="checkbox" name="r6c4">
+        </div>
+        <div class="row">
+          <input type="checkbox" name="r7c1">
+          <input type="checkbox" name="r7c2">
+          <input type="checkbox" name="r7c3">
+          <input type="checkbox" name="r7c4">
+        </div>
+      </div>
+      <div class="checkbox--number digit-7">
+        <div class="row">
+          <input type="checkbox" name="r1c1">
+          <input type="checkbox" name="r1c2">
+          <input type="checkbox" name="r1c3">
+          <input type="checkbox" name="r1c4">
+        </div>
+        <div class="row">
+          <input type="checkbox" name="r2c1">
+          <input type="checkbox" name="r2c2">
+          <input type="checkbox" name="r2c3">
+          <input type="checkbox" name="r2c4">
+        </div>
+        <div class="row">
+          <input type="checkbox" name="r3c1">
+          <input type="checkbox" name="r3c2">
+          <input type="checkbox" name="r3c3">
+          <input type="checkbox" name="r3c4">
+        </div>
+        <div class="row">
+          <input type="checkbox" name="r4c1">
+          <input type="checkbox" name="r4c2">
+          <input type="checkbox" name="r4c3">
+          <input type="checkbox" name="r4c4">
+        </div>
+        <div class="row">
+          <input type="checkbox" name="r5c1">
+          <input type="checkbox" name="r5c2">
+          <input type="checkbox" name="r5c3">
+          <input type="checkbox" name="r5c4">
+        </div>
+        <div class="row">
+          <input type="checkbox" name="r6c1">
+          <input type="checkbox" name="r6c2">
+          <input type="checkbox" name="r6c3">
+          <input type="checkbox" name="r6c4">
+        </div>
+        <div class="row">
+          <input type="checkbox" name="r7c1">
+          <input type="checkbox" name="r7c2">
+          <input type="checkbox" name="r7c3">
+          <input type="checkbox" name="r7c4">
+        </div>
+      </div>
+      <div class="checkbox--number digit-8">
+        <div class="row">
+          <input type="checkbox" name="r1c1">
+          <input type="checkbox" name="r1c2">
+          <input type="checkbox" name="r1c3">
+          <input type="checkbox" name="r1c4">
+        </div>
+        <div class="row">
+          <input type="checkbox" name="r2c1">
+          <input type="checkbox" name="r2c2">
+          <input type="checkbox" name="r2c3">
+          <input type="checkbox" name="r2c4">
+        </div>
+        <div class="row">
+          <input type="checkbox" name="r3c1">
+          <input type="checkbox" name="r3c2">
+          <input type="checkbox" name="r3c3">
+          <input type="checkbox" name="r3c4">
+        </div>
+        <div class="row">
+          <input type="checkbox" name="r4c1">
+          <input type="checkbox" name="r4c2">
+          <input type="checkbox" name="r4c3">
+          <input type="checkbox" name="r4c4">
+        </div>
+        <div class="row">
+          <input type="checkbox" name="r5c1">
+          <input type="checkbox" name="r5c2">
+          <input type="checkbox" name="r5c3">
+          <input type="checkbox" name="r5c4">
+        </div>
+        <div class="row">
+          <input type="checkbox" name="r6c1">
+          <input type="checkbox" name="r6c2">
+          <input type="checkbox" name="r6c3">
+          <input type="checkbox" name="r6c4">
+        </div>
+        <div class="row">
+          <input type="checkbox" name="r7c1">
+          <input type="checkbox" name="r7c2">
+          <input type="checkbox" name="r7c3">
+          <input type="checkbox" name="r7c4">
+        </div>
+      </div>
+      <div class="checkbox--number digit-9">
+        <div class="row">
+          <input type="checkbox" name="r1c1">
+          <input type="checkbox" name="r1c2">
+          <input type="checkbox" name="r1c3">
+          <input type="checkbox" name="r1c4">
+        </div>
+        <div class="row">
+          <input type="checkbox" name="r2c1">
+          <input type="checkbox" name="r2c2">
+          <input type="checkbox" name="r2c3">
+          <input type="checkbox" name="r2c4">
+        </div>
+        <div class="row">
+          <input type="checkbox" name="r3c1">
+          <input type="checkbox" name="r3c2">
+          <input type="checkbox" name="r3c3">
+          <input type="checkbox" name="r3c4">
+        </div>
+        <div class="row">
+          <input type="checkbox" name="r4c1">
+          <input type="checkbox" name="r4c2">
+          <input type="checkbox" name="r4c3">
+          <input type="checkbox" name="r4c4">
+        </div>
+        <div class="row">
+          <input type="checkbox" name="r5c1">
+          <input type="checkbox" name="r5c2">
+          <input type="checkbox" name="r5c3">
+          <input type="checkbox" name="r5c4">
+        </div>
+        <div class="row">
+          <input type="checkbox" name="r6c1">
+          <input type="checkbox" name="r6c2">
+          <input type="checkbox" name="r6c3">
+          <input type="checkbox" name="r6c4">
+        </div>
+        <div class="row">
+          <input type="checkbox" name="r7c1">
+          <input type="checkbox" name="r7c2">
+          <input type="checkbox" name="r7c3">
+          <input type="checkbox" name="r7c4">
+        </div>
+      </div>
+    </div>
+    <h3 class="number">
+      (___) ___-____
+    </h3>
+    <button onclick='drawNumbers()'>See Examples</button>
+    <button onclick='confirm()'>Submit</button>
+  </div>
+
+
+
 
 <script>
   function setup(){
     randomize()
     getSlider()
     slotListeners()
+    addCheckboxListeners()
+
+
     if(!webkitSpeechRecognition){
       document.querySelector('.speech-recognition').style.display = 'none'
     }
