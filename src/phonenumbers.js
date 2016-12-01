@@ -169,5 +169,23 @@ function addCheckboxListeners(){
       result.innerText = formatNumber(getNumber())
     })
   })
+}
+
+//Pi -------------
+var index = -1
+function forward(){
+  index += 1
+  var piAll = document.getElementById('pi-all');
+  var number = piAll.innerText.slice(index, index+10)
+  var span = `<span class="pi-selection">${number}</span>`
+  piAll.innerHTML = piAll.innerText.replace(number, span)
+
+}
+function backward(){
+  index -= 1
+  var piAll = document.getElementById('pi-all');
+  var number = piAll.innerText.slice(index, index+10)
+  var span = `<span class="pi-selection">${number}</span>`
+  piAll.innerHTML = piAll.innerText.replace(number, span)
 
 }
