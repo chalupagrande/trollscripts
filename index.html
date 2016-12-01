@@ -19,6 +19,9 @@
       text-decoration: none;
 
     }
+    .small{
+      font-size: 9px;
+    }
     a:hover{
       text-decoration: underline;
     }
@@ -38,23 +41,24 @@
 </head>
 <body>
 <div class="wrapper">
-  <h1>Bookmarklets</h1>
-  <p>Drag these links into your bookmarks bar. Then you can use them on any site! (That allows bookmarklets)</p>
-  <code>"javascript:(function(){var a = document.createElement('script'); a.setAttribute('src','http://ninth-mind.github.io/trollscripts/scripts/SCRIPTNAME.js'); document.body.appendChild(a)})()"</code>
+  <h1>Trollscripts</h1>
+  <p>Here are some dumb scripts I built in the persuit of knowledge, and laughs. </p>
 
-  <div class="links">
-    <a href="#" onclick="rainbow()">Debug Your CSS</a>
-    <a href="views/goku.html">goku</a>
-    <a href="views/phonenumbers.html">phonenumbers</a>
+  <ul class="links">
+    <li><a href="#" onclick="rainbow()">* Debug Your CSS</a></li>
+    <li><a href="views/goku.html">Goku</a></li>
+    <li><a href="views/phonenumbers.html">Phone Number Nightmare</a></li>
+    <li><a href="test-extension.zip" download>Taco Cat Chrome Extension</a></li>
+  </ul>
 
-  </div>
+  <p class="small">* = bookmarklet (drag into your bookmarks bar to run on other sites.</p>
 
 
   <div class="stats">
     <div class="node-name"></div>
     <div class="sizing">
       <div class="width"></div>
-      <div class="heihgt"></div>
+      <div class="height"></div>
     </div>
   </div>
 </div>
